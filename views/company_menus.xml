@@ -4,8 +4,10 @@
 
         <menuitem
             id="company_menu_root"
+
             name="کمپانی"
             web_icon="company,static/description/icon.png"
+
             />
 
          <menuitem
@@ -13,6 +15,14 @@
                 name="گزینه ها"
                 parent="company_menu_root"
                 sequence="1"/>
+
+
+        <menuitem
+            id="company_karmand_menu"
+            name="کارمندان"
+            parent="company_menu_settings"
+            action = "action_company_karmand"
+            sequence="1"/>
 
 
 

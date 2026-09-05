@@ -12,6 +12,8 @@
         'security/company_security.xml',
         'security/ir.model.access.csv',
 
+        'views/company_karmand_views.xml',
+
 
         'views/company_menus.xml',
 
