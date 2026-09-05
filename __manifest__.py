@@ -9,7 +9,7 @@
     'application': True,
     'installable': True,
     'data': [
-        'security/estate_security.xml',
+        'security/company_security.xml',
         'security/ir.model.access.csv',
 
 

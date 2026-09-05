@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 
+company.access_group_company_modir_mali_company_property,access_group_company_modir_mali_company_tankhah,company.model_company_tankhah,group_company_modir_mali,1,1,1,1
+company.access_group_company_karmand_company_tankhah,access_group_company_karmand_company_tankhah,company.model_company_tankhah,group_company_karmand,1,0,0,0
