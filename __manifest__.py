@@ -15,7 +15,7 @@
 
 
 
-
+        'views/order_report.xml',
         'views/company_karmand_views.xml',
         'views/company_request_views.xml',
         'views/company_tankhah_views.xml',
