@@ -7,7 +7,7 @@ class CompanyRequestLine(models.Model):
 
     request_id = fields.Many2one('company.request',string='درخواست',required=True)
 
-    tankhah_id = fields.Many2one('company.request',string='غذا',required=True)
+    tankhah_id = fields.Many2one('company.tankhah',string='تنخاه',required=True)
 
     quantity = fields.Integer(string='تعداد',required=True,default=1)
 

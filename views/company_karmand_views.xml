@@ -4,7 +4,7 @@
     <data>
         <record id="action_company_karmand" model="ir.actions.act_window">
             <field name="name">پیشنهاد</field>
-            <field name="res_model">estate.property.offer</field>
+            <field name="res_model">company.karmand</field>
             <field name="view_mode">tree,form</field>
         </record>
 
@@ -39,15 +39,7 @@
                 </form>
             </field>
 
-
-
-
-
-
-
-
-
-
+        </record>
 
     </data>
 </odoo>

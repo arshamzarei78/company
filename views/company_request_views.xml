@@ -36,7 +36,7 @@
             <field name="name">company.request.list</field>
             <field name="model">company.request</field>
             <field name="arch" type="xml">
-                <tree default_request="id drsc">
+                <tree>
                     <field name="karmand_id"/>
                     <field name="description"/>
                 </tree>

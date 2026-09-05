@@ -24,14 +24,21 @@
             action = "action_company_karmand"
             sequence="1"/>
 
-            <menuitem
-            id="company_request"
+        <menuitem
+            id="company_request_menu"
             name="درخواست ها"
             parent="company_menu_settings"
             action = "action_company_request"
 
             sequence="2"/>
 
+        <menuitem
+            id="company_tankha_menu"
+            name="تنخا"
+            parent="company_menu_settings"
+            action = "action_company_tankhah"
+
+            sequence="3"/>
 
 
     </data>

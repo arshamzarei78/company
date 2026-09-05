@@ -6,7 +6,6 @@ class CompanyTankhah(models.Model):
 
     name = fields.Char(string="نام هزینه",required=True)
     price = fields.Float(string="هزینه",required=True)
-    total_price = fields.Float(string="هزینه کل",compute="_compute_total_price")
 
 
 
