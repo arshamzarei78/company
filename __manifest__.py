@@ -9,11 +9,12 @@
     'application': True,
     'installable': True,
     'data': [
-        'security/estate_security.xml',
+        'security/company_security.xml',
         'security/ir.model.access.csv',
 
 
         'views/company_menus.xml',
+        'views/company_request_views.xml',
 
             ],
 }
