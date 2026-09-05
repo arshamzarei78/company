@@ -8,12 +8,15 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+
+
         <record id="view_company_request_form" model="ir.ui.view">
             <field name="model">company.request</field>
             <field name="arch" type="xml">
                 <form>
                     <sheet>
                         <group>
+                            <field name="total_amount"/>
                             <field name="karmand_id"/>
                             <field name="description"/>
                             <field name="request_line_ids">
@@ -23,8 +26,14 @@
                                 <field name="total"/>
                             </tree>
                             </field>
-                            <field name="total_amount"/>
-                            <field name="status"/>
+                                                        <!-- مشتری: فقط مشاهده -->
+                            <field name="status"
+                                   groups="company.group_company_karmand"
+                                   readonly="1"/>
+
+                            <!-- سرآشپز: قابل تغییر -->
+                            <field name="status"
+                                   groups="company.group_company_modir_mali"/>
                         </group>
 
                     </sheet>
@@ -39,6 +48,7 @@
                 <tree>
                     <field name="karmand_id"/>
                     <field name="description"/>
+                    <field name="status"/>
                 </tree>
             </field>
         </record>

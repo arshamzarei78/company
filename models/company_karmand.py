@@ -6,7 +6,7 @@ class CompanyKarmand(models.Model):
     _description = "company karmand"
 
     name = fields.Char(required=True, string='نام و نام خانوادگی')
-    description = fields.Char(required=True, string='توضیحات')
+    description = fields.Char(string='توضیحات')
     code = fields.Char(required=True, string='کد کارمندی')
     gender = fields.Selection([('male','مرد') , ('female', 'زن')], string='جنسیت')
     birth_date = fields.Date(string = "تاریخ تولد",required=True, default=fields.Date.today())
