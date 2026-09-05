@@ -4,30 +4,30 @@
 
 
         <field name="name">Order Report</field>
-        <field name="model">resturant.order</field>
+        <field name="model">company.request</field>
         <field name="report_type">qweb-pdf</field>
-        <field name="report_name">resturant.order_report</field>
-        <field name="report_file">resturant.order_report</field>
-        <field name="binding_model_id" ref="model_resturant_order"/>
+        <field name="report_name">company.request_report</field>
+        <field name="report_file">company.request_report</field>
+        <field name="binding_model_id" ref="model_company_request"/>
         <field name="binding_type">report</field>
     </record>
-    <template id="order_report">
+    <template id="request_report">
             <t t-call="web.html_container">
-                <t t-foreach="docs" t-as="order">
+                <t t-foreach="docs" t-as="request">
                     <t t-call="web.external_layout">
 
                         <div class="page">
 
-                            <h2>فاکتور سفارش</h2>
+                            <h2>فاکتور تنخا</h2>
 
                             <p>
                                 نام مشتری:
-                                <span t-field="order.karmand_id"/>
+                                <span t-field="request.karmand_id"/>
                             </p>
 
                             <p>
                                 تاریخ:
-                                <span t-field="order.date"/>
+                                <span t-field="request.date"/>
                             </p>
 
                             <table class="table table-sm">
@@ -40,9 +40,9 @@
                                 </thead>
 
                                 <tbody>
-                                    <tr t-foreach="order.order_line_ids" t-as="line">
+                                    <tr t-foreach="request.request_line_ids" t-as="line">
                                         <td>
-                                            <span t-field="line.tankha_id"/>
+                                            <span t-field="line.tankhah_id"/>
                                         </td>
                                         <td>
                                             <span t-field="line.quantity"/>
@@ -56,7 +56,7 @@
 
                             <h3>
                                 مجموع کل تنخا:
-                                <span t-field="order.total_amount"/>
+                                <span t-field="request.total_amount"/>
                             </h3>
 
                         </div>
