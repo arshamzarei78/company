@@ -1,8 +1,8 @@
-from odoo import models, fields, api
+from odoo import models, fields,
 
 
-class Karmand(models.Model):
-    _name = 'karmand'
+class CompanyKarmand(models.Model):
+    _name = 'company.karmand'
     _description = "company karmand"
 
     name = fields.Char(required=True, string='نام و نام خانوادگی')
