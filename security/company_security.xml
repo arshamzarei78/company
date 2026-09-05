@@ -14,7 +14,7 @@
         <field name="name">کارمند</field>
         <field name="category_id" ref="company_security"/>
     </record>
-    <!-- قانون برای کارمندان: فقط رکوردهایی را می‌بینند که خودشان ساخته‌اند -->
+
         <record id="rule_company_request_karmand_only" model="ir.rule">
             <field name="name">Employee can only see their own requests</field>
             <field name="model_id" ref="model_company_request"/>
@@ -26,11 +26,11 @@
             <field name="perm_unlink" eval="True"/>
         </record>
 
-        <!-- قانون برای مدیر مالی: همه رکوردها را می‌بیند -->
+
         <record id="rule_company_request_modir_mali_all" model="ir.rule">
             <field name="name">Manager can see all requests</field>
             <field name="model_id" ref="model_company_request"/>
-            <field name="domain_force">[(1, '=', 1)]</field> <!-- این دامین یعنی هیچ فیلتری اعمال نشود -->
+            <field name="domain_force">[(1, '=', 1)]</field>
             <field name="groups" eval="[(4, ref('group_company_modir_mali'))]"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
