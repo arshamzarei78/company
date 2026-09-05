@@ -5,7 +5,7 @@
         <menuitem
             id="company_menu_root"
             name="?????"
-            web_icon="estate,static/description/icon.png"
+            web_icon="cmpany,static/description/icon.png"
             />
 
          <menuitem
@@ -15,10 +15,10 @@
                 sequence="1"/>
 
         <menuitem
-            id=""
-            name=""
+            id="company_karmand_menu"
+            name="کارمندان"
             parent="company_menu_settings"
-            action = ""
+            action = "action_company_karmand"
             sequence="1"/>
 
 

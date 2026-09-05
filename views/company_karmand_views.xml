@@ -2,7 +2,7 @@
 
 <odoo>
     <data>
-        <record id="action_karmand" model="ir.actions.act_window">
+        <record id="action_company_karmand" model="ir.actions.act_window">
             <field name="name">پیشنهاد</field>
             <field name="res_model">estate.property.offer</field>
             <field name="view_mode">tree,form</field>
