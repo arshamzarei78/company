@@ -13,6 +13,7 @@ class CompanyKarmand(models.Model):
     phone = fields.Char(required=True, string = "شماره تلفن")
     address = fields.Text(string = "آدرس")
     is_active = fields.Boolean(string = "فعال")
+    request_ids = fields.One2many("company.request",'karmand_id',string = 'درخواست')
 
 
 
