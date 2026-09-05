@@ -16,6 +16,7 @@
 
 
         'views/company_menus.xml',
+        'views/company_request_views.xml',
 
             ],
 }

@@ -5,12 +5,12 @@
         <menuitem
             id="company_menu_root"
 
+
             name="کمپانی"
             web_icon="company,static/description/icon.png"
-
             />
 
-         <menuitem
+        <menuitem
                 id="company_menu_settings"
                 name="گزینه ها"
                 parent="company_menu_root"
@@ -23,6 +23,14 @@
             parent="company_menu_settings"
             action = "action_company_karmand"
             sequence="1"/>
+
+            <menuitem
+            id="company_request"
+            name="درخواست ها"
+            parent="company_menu_settings"
+            action = "action_company_request"
+
+            sequence="2"/>
 
 
 
