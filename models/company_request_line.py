@@ -7,17 +7,17 @@ class CompanyRequestLine(models.Model):
 
     request_id = fields.Many2one('company.request',string='درخواست',required=True)
 
-    tankhah_id = fields.Many2one('company.request,string='غذا',required=True)
+    tankhah_id = fields.Many2one('company.request',string='غذا',required=True)
 
     quantity = fields.Integer(string='تعداد',required=True,default=1)
 
     total = fields.Float(string='مجموع',compute='_compute_total')
 
 
-    @api.depends('food_id.price', 'quantity')
+    @api.depends('tankhah_id.price', 'quantity')
     def _compute_total(self):
         for records in self:
-           #records.total = records.food_id.price * records.quantity
+           records.total = records.tankhah_id.price * records.quantity
 
 
 

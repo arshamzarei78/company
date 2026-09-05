@@ -11,6 +11,8 @@ class ResturantRequest(models.Model):
     description      = fields.Text(string="توضیحات تکمیلی")
     date = fields.Date(string='تاریخ تنظیم', default=fields.Date.today())
 
+    status = fields.Selection([('pending', 'تایید نشده'),('confirmed', 'تایید شده'),], string='وضعیت', default='pending')
+
     total_amount = fields.Float(string='مجموع کل سفارشات', compute='_compute_total_amount')
 
     @api.depends('Request_line_ids.total')

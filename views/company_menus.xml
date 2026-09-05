@@ -15,10 +15,10 @@
                 sequence="1"/>
 
         <menuitem
-            id=""
-            name=""
+            id="company_request"
+            name="درخواست ها"
             parent="company_menu_settings"
-            action = ""
+            action = "action_company_request"
             sequence="1"/>
 
 

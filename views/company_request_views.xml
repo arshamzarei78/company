@@ -24,9 +24,8 @@
                             </tree>
                             </field>
                             <field name="total_amount"/>
+                            <field name="status"/>
                         </group>
-
-
 
                     </sheet>
                 </form>
